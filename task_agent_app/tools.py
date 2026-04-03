@@ -5,7 +5,7 @@ import google.oauth2.id_token
 from google.adk.tools.mcp_toolset import MCPToolset
 from google.adk.tools.mcp_toolset import StreamableHTTPConnectionParams
 
-BIGQUERY_MCP_URL = os.getenv("BIGQUERY_MCP_URL")
+BIGQUERY_MCP_URL = "https://bigquery.googleapis.com/mcp"
 
 def get_bigquery_mcp_toolset():   
         
