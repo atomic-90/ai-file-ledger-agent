@@ -4,37 +4,37 @@ Multi agent AI system that helps users manage, search, and understand their file
 
 # Features
 
-•Store the file metadata and content
-•Retrieve files by name, date, type
-•Summarize fil content using AI
-•Set reminders for file review
-•Multi-agent architecture (Coordinator + File + Reminder agents + Location agents(in future))
+•Store the file metadata and content <br />
+•Retrieve files by name, date, type <br />
+•Summarize fil content using AI <br />
+•Set reminders for file review <br />
+•Multi-agent architecture (Coordinator + File + Reminder agents + Location agents(in future)) <br />
 •Deployed on google cloud Run
 
 # Architecture
 
-User -> Root Agent -> File Agent -> BigQuery
-|
-Reminder Agent
-|
-Response Formatter
+User -> Root Agent -> File Agent -> BigQuery<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Reminder Agent<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Response Formatter<br />
 
 # Tech Stack
 
-•Python
-•Google ADK (Agent Development Kit)
-•Big Query
-•Cloud Run
+•Python <br />
+•Google ADK (Agent Development Kit)<br />
+•Big Query<br />
+•Cloud Run<br />
 •GitHub
 
 # Project Structure
 
-task_agent_app/
-├── agent.py
-├── tools.py
-├── **init**.py
-├── requirements.txt
-└── .env
+task_agent_app/<br />
+├── agent.py<br />
+├── tools.py<br />
+├── **init**.py<br />
+├── requirements.txt<br />
+└── .env<br />
 
-data/
+data/<br />
 └── sample_files.csv
