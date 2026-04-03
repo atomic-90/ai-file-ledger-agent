@@ -14,10 +14,10 @@ Multi agent AI system that helps users manage, search, and understand their file
 # Architecture
 
 User -> Root Agent -> File Agent -> BigQuery<br />
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|<br />
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Reminder Agent<br />
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|<br />
-&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Response Formatter<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Reminder Agent<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|<br />
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;Response Formatter<br />
 
 # Tech Stack
 
