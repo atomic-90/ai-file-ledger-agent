@@ -21,13 +21,11 @@ User -> Root Agent -> File Agent -> BigQuery<br />
 
 # Tech Stack
 
-> **
 > •Python <br />
 > •Google ADK (Agent Development Kit)<br />
 > •Big Query<br />
 > •Cloud Run<br />
 > •GitHub
-> **
 
 # Project Structure
 
