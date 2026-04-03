@@ -1,11 +1,32 @@
 import os
+import dotenv
 import google.auth
 import google.auth.transport.requests
 import google.oauth2.id_token
 from google.adk.tools.mcp_toolset import MCPToolset
 from google.adk.tools.mcp_toolset import StreamableHTTPConnectionParams
 
+MAPS_MCP_URL = "https://mapstools.googleapis.com/mcp" 
 BIGQUERY_MCP_URL = "https://bigquery.googleapis.com/mcp"
+
+
+def get_maps_mcp_toolset():
+    dotenv.load_dotenv()
+    maps_api_key = os.getenv('MAPS_API_KEY', 'no_api_found')
+    
+    tools = MCPToolset(
+        connection_params=StreamableHTTPConnectionParams(
+            url=MAPS_MCP_URL,
+            headers={    
+                "X-Goog-Api-Key": maps_api_key
+            },
+            timeout=30.0,          
+            sse_read_timeout=300.0
+        )
+    )
+    print("MCP Toolset configured for Streamable HTTP connection.")
+    return tools
+
 
 def get_bigquery_mcp_toolset():   
         
