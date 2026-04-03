@@ -21,20 +21,30 @@ User -> Root Agent -> File Agent -> BigQuery<br />
 
 # Tech Stack
 
-•Python <br />
-•Google ADK (Agent Development Kit)<br />
-•Big Query<br />
-•Cloud Run<br />
-•GitHub
+> **
+> •Python <br />
+> •Google ADK (Agent Development Kit)<br />
+> •Big Query<br />
+> •Cloud Run<br />
+> •GitHub
+> **
 
 # Project Structure
 
-task_agent_app/<br />
-├── agent.py<br />
-├── tools.py<br />
-├── **init**.py<br />
-├── requirements.txt<br />
-└── .env<br />
-
-data/<br />
-└── sample_files.csv
+```text
+ai-file-ledger-agent/
+├── data/                       # Pre-generated CSV files for BigQuery
+│   ├── sample_files.csv
+├── task_agent_app/             # AI Agent Application (ADK)
+│   ├── agent.py                # Agent definition
+│   ├── tools.py                # Custom tools for the agent
+│   ├── **init**.py
+│   ├── requirements.txt
+│   └── .env
+├── setup/                       # Infrastructure setup scripts
+│   ├── setup_bigquery.sh        # Script to provision BigQuery dataset and tables
+│   └── setup_env.sh             # Script to set up environment variables
+├── cleanup/                     # Infrastructure clean up environment
+│   ├── cleanup_env.sh           # Script to remove resources in environment
+└── README.md
+```
