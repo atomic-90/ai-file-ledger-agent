@@ -1,10 +1,15 @@
 sources:
   my-bq-source:
-    type: bigquery
-    project: Ai-File-Ledger-Agent
+    kind: bigquery
+    project: ai-file-ledger-agent
+
+tools:
+  run_query:
+    kind: bigquery-sql
+    source: my-bq-source
+    description: Execute SQL queries on BigQuery
+    statement: "{{query}}"
 
 toolsets:
   my_bq_toolset:
-    - name: run_query
-      type: bigquery.run_query
-      source: my-bq-source
+    - run_query
