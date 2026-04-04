@@ -1,7 +1,7 @@
 sources:
   my-bq-source:
     type: bigquery
-    project: ai-agent-data-track2-new
+    project: Ai-File-Ledger-Agent
 
 toolsets:
   my_bq_toolset:
