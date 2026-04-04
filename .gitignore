@@ -6,6 +6,9 @@ __pycache__/
 # toolbox
 mcp-toolbox/toolbox
 
+# agent
+.adk/
+
 # C extensions
 *.so
 
