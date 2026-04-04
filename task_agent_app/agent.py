@@ -19,6 +19,12 @@ root_agent = LlmAgent(
 
                 You have access to the following tools:
                 1. BigQuery tools → for file data, tasks, reminders. Run all query jobs from project id: {PROJECT_ID}
+                When using BigQuery tools:
+                - Generate valid SQL queries
+                - Use dataset: file_ledger
+                - Use table: files
+                - Use correct column names: name, type, content, created_at
+                - Always return relevant results    
                 2. Maps tools → for location-based queries
 
                 Guidelines:

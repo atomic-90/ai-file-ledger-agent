@@ -6,13 +6,21 @@ import google.oauth2.id_token
 from google.adk.tools.mcp_toolset import MCPToolset
 from google.adk.tools.mcp_toolset import StreamableHTTPConnectionParams
 
-MAPS_MCP_URL = "https://mapstools.googleapis.com/mcp" 
-BIGQUERY_MCP_URL = "https://bigquery.googleapis.com/mcp"
+MAPS_MCP_URL = os.getenv("MAPS_MCP_URL")
+if not MAPS_MCP_URL:
+    raise ValueError("MAPS_MCP_URL not set")
+
+
+BIGQUERY_MCP_URL = os.getenv("BIGQUERY_MCP_URL")
+if not BIGQUERY_MCP_URL:
+    raise ValueError("BIGQUERY_MCP_URL not set")
 
 
 def get_maps_mcp_toolset():
     dotenv.load_dotenv()
-    maps_api_key = os.getenv('MAPS_API_KEY', 'no_api_found')
+    maps_api_key = os.getenv('MAPS_API_KEY')
+    if not maps_api_key:
+        raise ValueError("MAPS_API_KEY missing")
     
     tools = MCPToolset(
         connection_params=StreamableHTTPConnectionParams(
