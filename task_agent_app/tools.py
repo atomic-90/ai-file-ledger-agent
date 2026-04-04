@@ -3,8 +3,10 @@ import dotenv
 import google.auth
 import google.auth.transport.requests
 import google.oauth2.id_token
-from google.adk.tools.mcp_toolset import MCPToolset
-from google.adk.tools.mcp_toolset import StreamableHTTPConnectionParams
+#from google.adk.tools.mcp_toolset import MCPToolset
+#from google.adk.tools.mcp_toolset import StreamableHTTPConnectionParams
+from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset
+from google.adk.tools.mcp_tool.mcp_session_manager import StreamableHTTPConnectionParams 
 
 MAPS_MCP_URL = os.getenv("MAPS_MCP_URL")
 if not MAPS_MCP_URL:
