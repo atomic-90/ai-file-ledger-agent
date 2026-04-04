@@ -1,0 +1,10 @@
+sources:
+  my-bq-source:
+    type: bigquery
+    project: ai-agent-data-track2-new
+
+toolsets:
+  my_bq_toolset:
+    - name: run_query
+      type: bigquery.run_query
+      source: my-bq-source
