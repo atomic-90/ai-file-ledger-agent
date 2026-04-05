@@ -12,6 +12,11 @@ mcp-toolbox/toolbox
 # C extensions
 *.so
 
+# toolbox
+mcp-toolbox/toolbox
+# agent
+.adk/
+
 # Distribution / packaging
 .Python
 build/
