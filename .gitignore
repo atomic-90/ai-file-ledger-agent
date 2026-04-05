@@ -3,6 +3,12 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# toolbox
+mcp-toolbox/toolbox
+
+# agent
+.adk/
+
 # C extensions
 *.so
 

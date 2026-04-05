@@ -40,7 +40,7 @@ ai-file-ledger-agent/
 │   ├── requirements.txt
 │   └── .env
 ├── mcp-toolbox/                 # MCP server
-│   ├── tools.yaml               # Tools configuration 
+│   ├── tools.yaml               # Tools configuration
 ├── setup/                       # Infrastructure setup scripts
 │   ├── setup_bigquery.sh        # Script to provision BigQuery dataset and tables
 │   └── setup_env.sh             # Script to set up environment variables
