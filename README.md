@@ -36,9 +36,11 @@ ai-file-ledger-agent/
 ├── task_agent_app/             # AI Agent Application (ADK)
 │   ├── agent.py                # Agent definition
 │   ├── tools.py                # Custom tools for the agent
-│   ├── **init**.py
+│   ├── __init__.py
 │   ├── requirements.txt
 │   └── .env
+├── mcp-toolbox/                 # MCP server
+│   ├── tools.yaml               # Tools configuration 
 ├── setup/                       # Infrastructure setup scripts
 │   ├── setup_bigquery.sh        # Script to provision BigQuery dataset and tables
 │   └── setup_env.sh             # Script to set up environment variables
