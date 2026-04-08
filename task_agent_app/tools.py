@@ -62,4 +62,3 @@ def get_bigquery_mcp_toolset():
     return tools
 
 
-    
